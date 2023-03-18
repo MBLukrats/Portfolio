@@ -1,0 +1,40 @@
+#Exp {
+    background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  
+  #mas {
+    position: relative;
+    display: block;
+    width: 4px;
+    height: 14px;
+    background: #000;
+    border-radius: 30%;
+  }
+  #mas::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 4px;
+    background: #000;
+    top: 5px;
+    left: -5px;
+    border-radius: 40%;
+  }
+  
+  #puesto{
+    display: none;
+  }
+  #SumarExp {
+    transition: box-shadow 0.5s;
+    background-color: transparent;
+    border-width: 0;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  #SumarExp:hover {
+    box-shadow: 0.5em 0.7em 0.4em rgba(0,0,0,0.3) ;
+  }

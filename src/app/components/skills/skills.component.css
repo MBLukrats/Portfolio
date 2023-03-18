@@ -1,0 +1,315 @@
+#Skills {
+    margin: 1% 0.5%;
+    background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.Banderas,.Banderas2,.Banderas3 {
+    display: inline-flex;
+    padding: 0% 0%;
+    width: 20px;
+    height: 16px;
+    background:rgb(80, 8, 6);
+    border-radius: 50%;
+    position: relative;
+    border:solid 1px;
+    transition: transform 0.5s;
+}
+.Banderas:before,.Banderas2:before,.Banderas3:before {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 16px;
+    background:rgb(65, 7, 5);
+    border-radius: 50%;
+    position: absolute;
+    left: -1px;
+    top: 1.5px;
+    z-index: -10;
+    border:solid 1px;
+}
+.Banderas:after,.Banderas2:after,.Banderas3:after {
+    content: " ";
+    display: block;
+    width: 12px;
+    height: 10px;
+    background:rgb(80, 6, 3);
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 1.5px;
+    z-index: 10;
+    
+}
+.Banderas{
+    margin-right:8%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 5%;
+}
+.Banderas2 {
+    margin-right:8%;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-left: 6.5%;
+}
+.Banderas3 {
+    margin-right:7%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 6%;
+}
+.circulo{
+    content: " ";
+    display: block;
+    width: 16px;
+    height: 12px;
+    background:rgb(85, 0, 3);
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    z-index: 5;
+    
+}
+.poste{
+    content: " ";
+    display:grid;
+    width: 5px;
+    height: 35px;
+    background: rgb(214, 205, 205);
+    position: absolute;
+    left: 40%;
+    bottom: 6px;
+    border:solid 0.5px;
+    border-radius: 10px;
+    z-index: 20;
+}
+.bola {
+    width: 6.5px;
+    height: 6.5px;
+    border-radius: 50%;
+    position: absolute;
+    background: #eaff2c;
+    top: -3px;
+    left: -1.5px;
+    
+}
+.flag {
+    position: absolute;
+}
+.pista {
+    width: 40px;
+    height: 22px;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+}
+.pistaV {
+    width: 40px;
+    height: 22px;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    z-index: 10;
+    display:none;
+}
+.tecnologia{
+    position: absolute;
+    top: 15px;
+  }
+  .Banderas:hover,.Banderas2:hover,.Banderas3:hover {
+    transform: scale(170%);
+  }
+  .tecnologia {
+    display: none;
+  }
+  .Banderas:hover .tecnologia {
+    display: block;
+  }
+  .Banderas:hover .pistaV {
+    display: block;
+  }
+  
+  .Banderas:hover .Tavion{
+    display: none;
+  }
+
+/*AVION*/
+#avion{
+    position: absolute;
+    display: none;
+    width: 50px;
+    height: 8px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 40%;
+    background: rgb(119, 119, 145);
+    transform: rotate(20deg);
+    transition: all 0.1s linear;
+    z-index: 70;
+  }
+  #avion::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 38px solid rgb(119, 119, 145);
+    border-right: 9px solid transparent;
+    border-bottom-left-radius: 20%;
+    left: 14px;
+    top:3px;
+    transform: rotate(30deg);
+    z-index: 100;
+  }
+  #avion::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 34px solid rgb(119, 119, 145);
+    border-left: 9px solid transparent;
+    border-bottom-left-radius: 20%;
+    left: 16px;
+    top:-30px;
+    transform: rotate(150deg);
+    z-index: 50;
+  }
+  #cola {
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: none;
+    border-left: 10px solid rgb(119, 119, 145);
+    border-top: 20px solid transparent;
+    transition: all 0.1s linear;
+    transform: rotate(-10deg);
+    z-index: 100;
+  }
+  /*ventanita 3*/
+  #cola:before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 15px;
+    top: 12px;
+    background: rgb(240, 239, 171);
+    border-radius: 50%;
+    transform: rotate(140deg);
+    transition: all 0.3s linear;
+  }
+  /*y ventanita 4*/
+  #cola::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 9px;
+    top: 8px;
+    background: rgb(240, 239, 171);
+    border-radius: 50%;
+    transform: rotate(140deg);
+    transition: all 0.3s linear;
+  }
+  #ventanas{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 17px;
+    top: 2px;
+    background: rgb(240, 239, 171);
+    border-radius: 50%;
+    transform: rotate(140deg);
+    transition: all 0.1s linear;
+    z-index: 150;
+  }
+  #ventanas::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 5px;
+    top: 4px;
+    background: rgb(240, 239, 171);
+    border-radius: 50%;
+    transform: rotate(140deg);
+    transition: all 0.3s linear;
+  }
+  #timon {
+    content: " ";
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 16px solid rgb(86, 86, 105);
+    border-right: 7px solid transparent;
+    border-bottom-left-radius: 20%;
+    transform: rotate(45deg);
+    transition: all 0.1s linear;
+  }
+  #timon::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 16px solid rgb(86, 86, 105);
+    border-left: 7px solid transparent;
+    left: -6px;
+    top: -35px;
+    transform: rotate(130deg);
+    transition: all 0.3s linear;
+  }
+  #flap {
+    content: " ";
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid rgb(178, 178, 187);
+    border-right: 3px solid transparent;
+    border-bottom-left-radius: 20%;
+    transform: rotate(50deg);
+    transition: all 0.1s linear;
+    z-index: 100;
+  }
+  #flap::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid rgb(178, 178, 187);
+    border-left: 3px solid transparent;
+    border-bottom-left-radius: 20%;
+    top: -46px;
+    left: -14px;
+    transform: rotate(120deg);
+    transition: all 0.3s linear;
+    z-index: 50;
+  }
+  #flap::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    background: rgb(240, 239, 171);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    top: -37px;
+    left: 10px;
+    transform: rotate(152deg);
+    transition: all 0.3s linear;
+    z-index: 100;
+  }

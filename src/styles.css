@@ -1,0 +1,50 @@
+body {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+string{
+  color:black;
+}   
+h5{
+  font-family:'Times New Roman', Times, serif;
+}
+p{
+  font-size:small;
+}
+.Editar{
+  transition: box-shadow 0.5s;
+  background-color: transparent;
+  border-width: 0;
+  margin: 0 0;
+  padding: 0 0;
+}
+.Camion{
+  transition: box-shadow 0.5s;
+  background-color: transparent;
+  border-width: 0;
+  margin: 0 0;
+  padding: 0 0;
+}
+.Editar:hover{
+  box-shadow: 0.5em 0.7em 0.4em rgba(0,0,0,0.3);
+}
+.Camion:hover{
+  box-shadow: 0.7em 0.5em 0.4em rgba(0,0,0,0.3);
+}
+.texto{
+  position: absolute;
+  top: 13px;
+  left: -5px;
+  color: rgb(0, 255, 255);
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+

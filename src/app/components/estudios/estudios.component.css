@@ -1,0 +1,35 @@
+#ContenedorEstudios{
+    background: #1f4037;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: 1em 0.5%;  
+}
+.Flogos{
+    width: 3em;
+    height: auto;
+}
+.CIATA{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.C{
+    border-radius: 50%;
+}
+.TextoEstudios{
+    margin-left: 1.5%;
+}
+.estudios {
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+.linkLogos:hover{
+    box-shadow: .6em 0em 1em rgba(0,0,0,0.3);
+}
+.linkEstudios{
+    color:black;
+}
+.linkEstudios:hover{
+    color:black;
+    text-shadow: 0.2em 0.1em 0.3em rgba(40,30,60,20);
+}
