@@ -2,7 +2,7 @@
     position: relative;
     height:calc(108vh - 50px);
     widows: 100%;
-    background-image: url(../../../assets/IMG/6.1.jfif);
+    background-image: url(../../../assets/IMG/3.1.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;
@@ -12,7 +12,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(5px);
 } 
 #Yo{
