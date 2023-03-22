@@ -1,11 +1,23 @@
-#Skills {
+#habilidades{
+  position: relative;
+}
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.Skills {
   background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 margin: 1% 0.5%;
   text-align: center;
   padding: 0% 20%;  
+  position: relative;
+  z-index: 100;
 }
+
 .Banderas {
     display: inline-flex;
     padding: 0% 0%;
