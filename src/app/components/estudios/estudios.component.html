@@ -1,73 +1,36 @@
 <div class="row" Id="ContenedorEstudios">
-    <div>
+    <div style="text-align: center;">
       <span><h4>Estudios</h4></span> 
-      <span style="float: right;margin-right: 10px;"><button type="button" class="Editar"><span id="mas"></span></button></span>
+      <span style="margin-right: 10px;"><button type="button" class="Editar"><span id="mas"></span></button></span>
     </div>
-
-    <div class="estudios">
-        <span style="float: left;"><a target="_blank" href="http://inac.edu.ar/" class="linkLogos">
-          <img src="../../../assets/IMG/CIATA.jfif" class="Flogos CIATA"></a>
-        </span>
-        <span style="float: left;" class="TextoEstudios">
-          <strong>
-          <a target="_blank" href="https://exactas.uba.ar/" class="linkEstudios">I.N.A.C. C.I.A.T.A.</a>
-          <br>
-          Tecnico Aeronautico (2015-2021)
+    <!--Secundario-->
+<ul>
+  <li *ngFor="let item of educList;">
+    <div class="estudios" ngFor="let item of educList;">
+      <span style="display: inline-flex;"><a target="_blank" href={{item.redireccion}} class="linkLogos">
+        <img src={{item.imagen}} class="Flogos"></a>
+      </span>
+      <span  class="TextoEstudios">
+        <strong>
+          <a target="_blank" href="https://exactas.uba.ar/" class="linkEstudios">
+            {{item.titulo}}</a><br>
+            {{item.descripcion}}<br>
+            ({{item.inicio}}-{{item.fin}})
         </strong>
-        </span>
-        <span style="float: right;margin-top: 10px;">
-          <button type="button" class="Camion"><img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button>
-        </span>
-        <span style="float: right;margin-right: 5px;margin-top: 10px;">
-          <button type="button" class="Editar"><img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button>
-        </span>
+        
+      </span>
+      <!--Botones Edit-->
+      <span style="float: right;margin-top: 10px;">
+        <button type="button" class="Camion"><img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button>
+      </span>
+      <span style="float: right;margin-right: 5px;margin-top: 10px;">
+        <button type="button" class="Editar"><img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button>
+      </span>
+      <!--Fin Botones-->
+    
     </div>
+  </li> 
+</ul>
 
-    <div class="estudios">
-        <span style="float: left;">
-          <a target="_blank" href="https://www.youtube.com/@OIAUNLaM" class="linkLogos">
-            <img src="../../../assets/IMG/OIA.jfif" alt="O.I.A" class="Flogos C">
-          </a>
-        </span>
-        <span style="float: left;" class="TextoEstudios">
-          <strong class="centrado">
-          <a target="_blank" href="https://exactas.uba.ar/" class="linkEstudios">Curso C++</a>
-          <p>Pasantias Virtuales (2021)</p>
-        </strong>
-        </span>
-        <span style="float: right;margin-top: 10px;"><button type="button" class="Camion"><img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button></span>
-        <span style="float: right;margin-right: 5px;margin-top: 10px;"><button type="button" class="Editar"><img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button></span>
-    </div>
-
-    <div class="estudios">
-        <span style="float: left;">
-          <a target="_blank" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" class="linkLogos">
-          <img src="../../../assets/IMG/ARG1.jpg" alt="Se programar" class="Flogos C"></a>
-        </span>
-        <span style="float: left;" class="TextoEstudios">
-          <strong class="centrado">
-          <a target="_blank" href="https://exactas.uba.ar/" class="linkEstudios">Argentina Programa</a><p>(2022-2023)</p></strong>
-        </span>
-        <span style="float: right;margin-top: 10px;"><button type="button" class="Camion"><img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button></span>
-        <span style="float: right;margin-right: 5px;margin-top: 10px;"><button type="button" class="Editar"><img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button></span>
-    </div>
-
-    <div class="estudios">
-        <span style="float: left;"> 
-          <a target="_blank" href="https://exactas.uba.ar/" class="linkLogos">
-          <img src="../../../assets/IMG/EXACTAS.png" alt="UBA Exactas" class="Flogos" /></a>
-        </span>
-        <span style="float: left;" class="TextoEstudios">
-          <strong class="centrado">
-          <a target="_blank" href="https://exactas.uba.ar/" class="linkEstudios">1°Año Lic. En Cs. Fisicas</a>
-          <p>Cursando (2021-)</p></strong>
-        </span>
-        <span style="float: right;margin-top: 10px;">
-          <button type="button" class="Camion"><img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button>
-        </span>
-        <span style="float: right;margin-right: 5px;margin-top: 10px;">
-          <button type="button" class="Editar"><img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button>
-        </span>
-    </div>
-  </div>
+</div>
   

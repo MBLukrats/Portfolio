@@ -1,0 +1,120 @@
+{
+    "yo": {
+        "foto" : "../../../assets/IMG/yo.jpg",
+        "nombre": "Lucas Martin Buzzoni",
+        "titulos": {
+            "programador": "Full Stack Development Jr",
+            "secundario": "Tecnico Aeronautico"
+        },
+        "sobremi":"Empece en la programacion por el gusto en la resolucion de problemas, asi inicie en c++ orientado en competir. Al ir profundizando me comenzo a interesar el desarrollo web pero siempre manteniendo el enfoque de la practicidad y optimazion del codigo aprendido y mi corto trayecto por la competicion.",
+        "intereses":{
+            "uno": "Dibujo",
+            "dos": "Matematica",
+            "tres": "Lectura",
+            "cuatro": "Juegos",
+            "cinco": "Mate 🧉"
+        }
+    },
+    "estudios": [{
+            "titulo": "I.N.A.C. C.I.A.T.A.",
+            "descripcion": "Secundario orientado en la aeronautica",
+            "inicio": "2015",
+            "fin": "2021",
+            "imagen": "../../../assets/IMG/CIATA.jfif",
+            "redireccion": "http://inac.edu.ar/"
+        },
+        {
+            "titulo": "Curso C++",
+            "descripcion": "Pasantias Virtuales",
+            "inicio": "2021",
+            "fin": "2021",
+            "imagen": "../../../assets/IMG/OIA.jfif",
+            "redireccion": "https://www.youtube.com/@OIAUNLaM"
+        },
+        {
+            "titulo": "Argentina Programa",
+            "descripcion": "Capacitacion del Gobierno",
+            "inicio": "2022",
+            "fin": "2023",
+            "imagen": "../../../assets/IMG/ARG1.jpg",
+            "redireccion": "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+        },
+        {
+            "titulo": "Licenciatura En Cs. Fisicas",
+            "descripcion": "Cursando 1° Ano",
+            "inicio": "2021",
+            "fin": "-",
+            "imagen": "../../../assets/IMG/EXACTAS.png",
+            "redireccion": "https://exactas.uba.ar/"
+        }],
+    "habilidades": {
+        "html":{
+            "nombre":"HTML",
+            "ano": "2022",
+            "logo": "",
+            "profundidad": "5"
+        },
+        "css":{
+            "nombre": "CSS",
+            "ano": "2022",
+            "logo": "",
+            "profundidad": "5"
+        },
+        "c":{
+            "nombre":"C++",
+            "ano": "2021",
+            "logo": "../../../assets/IMG/C++.png",
+            "profundidad": "1"
+        },
+        "boostrap":{
+            "nombre":"Boostrap",
+            "ano": "2022",
+            "logo": "",
+            "profundidad": "3"
+        },
+        "javascript":{
+            "nombre":"JavaScript",
+            "ano": "2023",
+            "logo": "",
+            "profundidad": "3"
+        },
+        "angular":{
+            "nombre":"Angular",
+            "ano": "2023",
+            "logo": "",
+            "profundidad": "3"
+        },
+        "git":{
+            "nombre":"Git/Hub",
+            "ano": "2023",
+            "logo": "",
+            "profundidad": "5"
+        },
+        "mysql":{
+            "nombre":"MySQL",
+            "ano": "2023",
+            "logo": "",
+            "profundidad": "5"
+        },
+        "typscript":{
+            "nombre":"TypScript",
+            "ano": "2023",
+            "logo": "",
+            "profundidad": "1"
+        }
+    },
+    "experiencia": {
+        "proyectos":{
+            "nombre":"Mi Portfolio",
+            "descripcion":"Esta Pagina",
+            "tecnologiasusadas": "Angular, MySql, Java",
+            "foto": ""
+        },
+        "puestos": {
+            "nombre":"",
+            "descripcion":"",
+            "logoempresa":""
+        }
+    }
+    
+}

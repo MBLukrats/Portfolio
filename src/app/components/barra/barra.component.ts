@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-barra',
   templateUrl: './barra.component.html',
   styleUrls: ['./barra.component.css']
 })
-export class BarraComponent {
+export class BarraComponent implements OnInit {
+
+  constructor(){
+
+  }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
 }
