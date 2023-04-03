@@ -11,6 +11,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { BarraComponent } from './components/barra/barra.component';
 import { DescripcionComponent } from './components/descripcion/descripcion.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienciaComponent,
     ContactoComponent,
     BarraComponent,
-    DescripcionComponent
+    DescripcionComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
