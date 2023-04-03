@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from 'src/app/servicios/datos.service';
+import { EditarEstudiosComponent } from '../editar-estudios/editar-estudios.component';
 
 @Component({
   selector: 'app-estudios',

@@ -17,8 +17,8 @@ a {
 
 .estudios {
     padding: 0% 0%;
-    display: flex;
-    margin: 3em 0;
+    display: inline-block;
+    margin: 2em 0;
 }
 .TextoEstudios{
     display: inline-flex;

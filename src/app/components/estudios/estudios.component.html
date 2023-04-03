@@ -6,7 +6,7 @@
     <!--Secundario-->
 <ul>
   <li *ngFor="let item of educList;">
-    <div class="estudios" ngFor="let item of educList;">
+    <span class="estudios" ngFor="let item of educList;">
       <span style="display: inline-flex;"><a target="_blank" href={{item.redireccion}} class="linkLogos">
         <img src={{item.imagen}} class="Flogos"></a>
       </span>
@@ -17,20 +17,24 @@
             {{item.descripcion}}<br>
             ({{item.inicio}}-{{item.fin}})
         </strong>
-        
       </span>
-      <!--Botones Edit-->
-      <span style="float: right;margin-top: 10px;">
-        <button type="button" class="Camion"><img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button>
-      </span>
-      <span style="float: right;margin-right: 5px;margin-top: 10px;">
-        <button type="button" class="Editar"><img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button>
-      </span>
-      <!--Fin Botones-->
-    
-    </div>
-  </li> 
+    </span>
+    <!--Botones Edit-->
+    <span style="float: right;margin-top: 3em;">
+      <button style="background-color: yellow;"
+      button type="button" class="btn btn-primary Camion" data-bs-toggle="modal" 
+      data-bs-target="#exampleModal" data-bs-whatever="Eliminar">
+      <img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button>
+    </span>
+    <span style="float: right;margin-right: 5px;margin-top: 3em;">
+      <button style="background-color: yellow;"
+      button type="button" class="btn btn-primary Camion" data-bs-toggle="modal" 
+      data-bs-target="#exampleModal" data-bs-whatever="Editar">
+      <img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button>
+    </span>
+    <!--Fin Botones-->
+  </li>
 </ul>
-
 </div>
+<app-editar-estudios></app-editar-estudios>
   

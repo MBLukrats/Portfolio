@@ -12,6 +12,9 @@ import { BarraComponent } from './components/barra/barra.component';
 import { DescripcionComponent } from './components/descripcion/descripcion.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
+import { EditarEstudiosComponent } from './components/editar-estudios/editar-estudios.component';
+import { EditarSkillsComponent } from './components/editar-skills/editar-skills.component';
+import { EditarExperienciaComponent } from './components/editar-experiencia/editar-experiencia.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { LoginComponent } from './components/login/login.component';
     ContactoComponent,
     BarraComponent,
     DescripcionComponent,
-    LoginComponent
+    LoginComponent,
+    EditarEstudiosComponent,
+    EditarSkillsComponent,
+    EditarExperienciaComponent
   ],
   imports: [
     BrowserModule,
