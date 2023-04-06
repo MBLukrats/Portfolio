@@ -1,12 +1,6 @@
 #habilidades{
   position: relative;
 }
-#particles-js{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
 .Skills {
   background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,7 +12,7 @@ margin: 1% 0.5%;
   z-index: 100;
 }
 
-.Banderas {
+/* .Banderas {
     display: inline-flex;
     padding: 0% 0%;
     width: 20px;
@@ -30,7 +24,6 @@ margin: 1% 0.5%;
     transition: transform 0.5s;
     text-align: center;
 }
-
 .card {
   position: relative;
   background-color: transparent;
@@ -74,7 +67,6 @@ margin: 1% 0.5%;
 .card:hover .tecnologia {
   transform: perspective(500px) rotateY(0deg);
 }
-
 .Banderas:before {
     content: " ";
     display: block;
@@ -156,183 +148,446 @@ margin: 1% 0.5%;
     left: 2px;
     z-index: 10;
     display:none;
+} */
+
+
+#mundo{
+    width: 300px;
+    height: 300px;
+    perspective: 200em;
+    
+}
+.peon {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateY(0) rotateX(90deg) rotateZ(270deg)
+    scaleX(30%) scaleY(30%) scaleZ(30%);
+    animation: rotar-peon 2s linear infinite;
+}
+@keyframes  rotar-peon{
+    0%{
+        transform: rotateY(0) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
+    25%{
+        transform: rotateY(90deg) rotateX(92deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(30%) scaleY(30%) scaleZ(30%);
+    } 
+    50%{
+        transform: rotateY(180deg) rotateX(95deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
+    75%{
+        transform: rotateY(270deg) rotateX(93deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(30%) scaleY(30%) scaleZ(30%);
+    } 
+    100%{
+        transform: rotateY(360deg) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
+}
+#mundo:hover .peon {
+    animation: 
+    transicion 2s linear;
+    animation-fill-mode:forwards;
+}
+#mundo:hover .html{
+    display: flex;
+    animation: aparicion 8s linear;
+    animation-fill-mode:forwards;
+} 
+@keyframes transicion {
+    0%{
+        transform: rotateY(0) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
+    25%{
+        transform: rotateY(180deg) rotateX(95deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(22%) scaleY(22%) scaleZ(22%);
+        
+    }
+    50%{
+        transform: rotateY(360deg) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(15%) scaleY(15%) scaleZ(15%);   
+    }
+    75%{
+        transform: rotateY(540deg) rotateX(92deg) rotateZ(90deg) 
+        translateZ(-50px) scaleX(8%) scaleY(8%) scaleZ(8%);
+    } 
+    100%{
+        transform: rotateY(720deg) rotateX(93deg) rotateZ(90deg) 
+        translateZ(-50px)
+        scaleX(0%) scaleY(0%) scaleZ(0%);
+    } 
+}
+.peon div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.peon div:nth-child(1){
+    transform: 
+    translateZ(0px);
+    background: linear-gradient(rgb(12, 12, 12), rgb(63, 29, 29));
+}
+/*Base*/
+.peon div:nth-child(2){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(0px) translateY(175px)
+    rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(255, 254, 254);
+    border-top: 0px solid transparent;
+}
+.peon div:nth-child(3){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(0px) translateY(25px)
+    rotateX(-120deg) rotateY(0deg) rotateZ(0deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(233, 227, 227);
+    border-top: 0px solid transparent;
+}
+.peon div:nth-child(4){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(-74px) translateY(100px)
+    rotateX(0deg) rotateY(-59deg) rotateZ(90deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(236, 234, 234);
+    border-top: 0px solid transparent;
+}
+.peon div:nth-child(5){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(74px) translateY(100px)
+    rotateX(0deg) rotateY(-121deg) rotateZ(90deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(250, 250, 249);
+    border-top: 0px solid transparent;
+}
+/*Tronco*/
+.peon div:nth-child(6){
+    background-color:transparent ;
+    width: 125px;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 150px solid rgb(236, 226, 226);
+    transform: 
+    translateZ(188px) translateX(37px) translateY(90px)
+    rotateZ(0) rotateX(104deg) rotateY(0deg);
+}
+.peon div:nth-child(7){
+    background-color:transparent ;
+    width: 125px;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 150px solid rgb(235, 226, 226);
+    transform: 
+    translateZ(188px) translateX(40px) translateY(10px)
+    rotateZ(0) rotateX(76deg) rotateY(0deg);
+}
+.peon div:nth-child(8){
+    background-color:transparent ;
+    width: 125px;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 150px solid rgb(255, 255, 255);
+    transform: 
+    translateZ(188px) translateX(75px) translateY(50px)
+    rotateZ(90deg) rotateX(76deg) rotateY(0deg);
+}
+.peon div:nth-child(9){
+    background-color:transparent ;
+    width: 125px;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 150px solid rgb(248, 234, 234);
+    transform: 
+    translateZ(188px) translateX(0px) translateY(50px)
+    rotateZ(90deg) rotateX(104deg) rotateY(0deg);
+} 
+/*Cabeza*/
+.peon div:nth-child(10){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(100px) translateY(110px)
+    rotateZ(0deg) rotateX(90deg) rotateY(90deg);
+    background-color: transparent;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-top: 80px solid rgb(245, 245, 247);
+    border-bottom: 0px solid transparent;
+}
+.peon div:nth-child(11){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(48px) translateY(110px)
+    rotateZ(0deg) rotateX(90deg) rotateY(90deg);
+    background-color: transparent;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-top: 80px solid rgb(245, 244, 242);
+    border-bottom: 0px solid transparent;
+}
+.peon div:nth-child(12){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(76px) translateY(137px)
+    rotateZ(0deg) rotateX(90deg) rotateY(0deg);
+    background-color: transparent;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-top: 80px solid rgb(240, 238, 234);
+    border-bottom: 0px solid transparent;
+}
+.peon div:nth-child(13){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(76px) translateY(83px)
+    rotateZ(0deg) rotateX(90deg) rotateY(0deg);
+    background-color: transparent;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-top: 80px solid rgb(253, 255, 252);
+    border-bottom: 0px solid transparent;
+}
+/*Cabeza al reves*/
+.peon div:nth-child(15){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(103px) translateY(91px)
+    rotateZ(45deg) rotateX(77deg) rotateY(0deg);
+    background-color: transparent;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 0px solid transparent; 
+    border-bottom: 80px solid rgb(252, 252, 252);
+}
+.peon div:nth-child(16){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(103px) translateY(129px)
+    rotateZ(135deg) rotateX(77deg) rotateY(0deg);
+    background-color: transparent;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 0px solid transparent; 
+    border-bottom: 80px solid rgb(254, 255, 254);
+}
+.peon div:nth-child(17){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(66px) translateY(129px)
+    rotateZ(225deg) rotateX(77deg) rotateY(0deg);
+    background-color: transparent;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 0px solid transparent; 
+    border-bottom: 80px solid rgb(254, 255, 253);
+}
+.peon div:nth-child(18){
+    height: 0px;
+    width: 0px;
+    transform:  
+    translateZ(275px) translateX(66px) translateY(91px)
+    rotateZ(315deg) rotateX(77deg) rotateY(0deg);
+    background-color: transparent;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 0px solid transparent; 
+    border-bottom: 80px solid rgb(251, 251, 253);
+}
+.peon div:nth-child(19){
+    height: 32.5px;
+    width: 32.5px;
+    transform:  
+    translateZ(313px) translateX(84px) translateY(134px)
+    rotateZ(45deg) rotateX(0deg) rotateY(0deg);
+    background-color: rgb(255, 255, 255);
+}
+.html {
+    display: none;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotar-peon 2s linear infinite;
+}
+.html div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.html div:nth-child(1){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(0deg)
+    translateX(-50px) translateY(-850px) translateZ(0px)
+    ;
+}
+.html div:nth-child(2){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(0deg)
+    translateX(-50px) translateY(-850px) translateZ(-300px)
+    ;
+}
+.html div:nth-child(3){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(90deg)
+    translateX(150px) translateY(-850px) translateZ(100px)
+    ;
+}
+.html div:nth-child(4){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(90deg)
+    translateX(150px) translateY(-850px) translateZ(-200px)
+    ;
+}
+@keyframes aparicion {
+    0%{
+        transform: rotateY(0) rotateX(90deg) rotateZ(90deg) 
+        translateZ(0)
+        scaleX(0%) scaleY(0%) scaleZ(0%);
+    }
+    7%{
+        transform: rotateY(180deg) rotateX(95deg) rotateZ(90deg) 
+        translateZ(0)
+        scaleX(8%) scaleY(8%) scaleZ(8%);
+        
+    }
+    13%{
+        transform: rotateY(360deg) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-1em)
+        scaleX(15%) scaleY(15%) scaleZ(15%);   
+    }
+    19%{
+        transform: rotateY(540deg) rotateX(92deg) rotateZ(90deg) 
+        translateZ(-1em)
+        scaleX(22%) scaleY(22%) scaleZ(22%);
+    } 
+    25%{
+        transform: rotateY(720deg) rotateX(93deg) rotateZ(90deg) 
+        translateZ(-3em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
+    32%{
+        transform: rotateY(800deg) rotateX(95deg) rotateZ(90deg) 
+        translateZ(-3em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+        
+    }
+    38%{
+        transform: rotateY(880deg) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-3em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);  
+    }
+    45%{
+        transform: rotateY(960deg) rotateX(92deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+    } 
+    52%{
+        transform: rotateY(1040deg) rotateX(93deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
+    58%{
+        transform: rotateY(1120deg) rotateX(95deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+        
+    }
+    64%{
+        transform: rotateY(1200deg) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);  
+    }
+    71%{
+        transform: rotateY(1280deg) rotateX(92deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+    } 
+    77%{
+        transform: rotateY(1360deg) rotateX(93deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
+    83%{
+        transform: rotateY(1440deg) rotateX(95deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+        
+    }
+    89%{
+        transform: rotateY(1520deg) rotateX(90deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);  
+    }
+    95%{
+        transform: rotateY(1600deg) rotateX(92deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+    } 
+    100%{
+        transform: rotateY(1680deg) rotateX(93deg) rotateZ(90deg) 
+        translateZ(-2em)
+        scaleX(30%) scaleY(30%) scaleZ(30%);
+    }
 }
 
 
-/*AVION*/
-#avion{
-    position: absolute;
-    display: none;
-    width: 50px;
-    height: 8px;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 40%;
-    background: rgb(119, 119, 145);
-    transform: rotate(20deg);
-    transition: all 0.1s linear;
-    z-index: 70;
-  }
-  #avion::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 38px solid rgb(119, 119, 145);
-    border-right: 9px solid transparent;
-    border-bottom-left-radius: 20%;
-    left: 14px;
-    top:3px;
-    transform: rotate(30deg);
-    z-index: 100;
-  }
-  #avion::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 34px solid rgb(119, 119, 145);
-    border-left: 9px solid transparent;
-    border-bottom-left-radius: 20%;
-    left: 16px;
-    top:-30px;
-    transform: rotate(150deg);
-    z-index: 50;
-  }
-  #cola {
-    width: 0;
-    height: 0;
-    position: absolute;
-    display: none;
-    border-left: 10px solid rgb(119, 119, 145);
-    border-top: 20px solid transparent;
-    transition: all 0.1s linear;
-    transform: rotate(-10deg);
-    z-index: 100;
-  }
-  /*ventanita 3*/
-  #cola:before{
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    left: 15px;
-    top: 12px;
-    background: rgb(240, 239, 171);
-    border-radius: 50%;
-    transform: rotate(140deg);
-    transition: all 0.3s linear;
-  }
-  /*y ventanita 4*/
-  #cola::after{
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    left: 9px;
-    top: 8px;
-    background: rgb(240, 239, 171);
-    border-radius: 50%;
-    transform: rotate(140deg);
-    transition: all 0.3s linear;
-  }
-  #ventanas{
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    left: 17px;
-    top: 2px;
-    background: rgb(240, 239, 171);
-    border-radius: 50%;
-    transform: rotate(140deg);
-    transition: all 0.1s linear;
-    z-index: 150;
-  }
-  #ventanas::after{
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    left: 5px;
-    top: 4px;
-    background: rgb(240, 239, 171);
-    border-radius: 50%;
-    transform: rotate(140deg);
-    transition: all 0.3s linear;
-  }
-  #timon {
-    content: " ";
-    display: none;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 16px solid rgb(86, 86, 105);
-    border-right: 7px solid transparent;
-    border-bottom-left-radius: 20%;
-    transform: rotate(45deg);
-    transition: all 0.1s linear;
-  }
-  #timon::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 16px solid rgb(86, 86, 105);
-    border-left: 7px solid transparent;
-    left: -6px;
-    top: -35px;
-    transform: rotate(130deg);
-    transition: all 0.3s linear;
-  }
-  #flap {
-    content: " ";
-    display: none;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 20px solid rgb(178, 178, 187);
-    border-right: 3px solid transparent;
-    border-bottom-left-radius: 20%;
-    transform: rotate(50deg);
-    transition: all 0.1s linear;
-    z-index: 100;
-  }
-  #flap::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 20px solid rgb(178, 178, 187);
-    border-left: 3px solid transparent;
-    border-bottom-left-radius: 20%;
-    top: -46px;
-    left: -14px;
-    transform: rotate(120deg);
-    transition: all 0.3s linear;
-    z-index: 50;
-  }
-  #flap::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 10px;
-    height: 3px;
-    background: rgb(240, 239, 171);
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    top: -37px;
-    left: 10px;
-    transform: rotate(152deg);
-    transition: all 0.3s linear;
-    z-index: 100;
-  }
+
+
+
+
+
+
+
+
