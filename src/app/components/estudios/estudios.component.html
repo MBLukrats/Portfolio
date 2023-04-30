@@ -1,40 +1,39 @@
 <div class="row" Id="ContenedorEstudios">
-    <div style="text-align: center;">
-      <span><h4>Estudios</h4></span> 
-      <span style="margin-right: 10px;"><button type="button" class="Editar"><span id="mas"></span></button></span>
-    </div>
-    <!--Secundario-->
+  <div style="text-align: center;">
+    <span><h4>Estudios</h4></span> 
+    <span style="margin-right: 10px;"><button type="button" class="Editar"><span id="mas"></span></button></span>
+  </div>
 <ul>
-  <li *ngFor="let item of educList;">
-    <span class="estudios" ngFor="let item of educList;">
-      <span style="display: inline-flex;"><a target="_blank" href={{item.redireccion}} class="linkLogos">
-        <img src={{item.imagen}} class="Flogos"></a>
-      </span>
-      <span  class="TextoEstudios">
-        <strong>
-          <a target="_blank" href="https://exactas.uba.ar/" class="linkEstudios">
-            {{item.titulo}}</a><br>
-            {{item.descripcion}}<br>
-            ({{item.inicio}}-{{item.fin}})
-        </strong>
-      </span>
+<li *ngFor="let item of educList;">
+  <span class="estudios" ngFor="let item of educList;">
+    <span style="display: inline-flex;"><a target="_blank" href={{item.redireccion}} class="linkLogos">
+      <img src={{item.imagen}} class="Flogos"></a>
     </span>
-    <!--Botones Edit-->
-    <span style="float: right;margin-top: 3em;">
-      <button style="background-color: yellow;"
-      button type="button" class="btn btn-primary Camion" data-bs-toggle="modal" 
-      data-bs-target="#exampleModal" data-bs-whatever="Eliminar">
-      <img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button>
+    <span  class="TextoEstudios">
+      <strong>
+        <a target="_blank" href="https://exactas.uba.ar/" class="linkEstudios">
+          {{item.titulo}}</a><br>
+          {{item.descripcion}}<br>
+          ({{item.inicio}}-{{item.fin}})
+          
+      </strong>
     </span>
-    <span style="float: right;margin-right: 5px;margin-top: 3em;">
-      <button style="background-color: yellow;"
-      button type="button" class="btn btn-primary Camion" data-bs-toggle="modal" 
-      data-bs-target="#exampleModal" data-bs-whatever="Editar">
-      <img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button>
-    </span>
-    <!--Fin Botones-->
-  </li>
+  </span>
+  <!--Botones Edit-->
+  <span style="float: right; margin-top: 3em;" [style.display]=botones>
+    <button style="background-color: yellow;"
+    button type="button" class="btn btn-primary Camion" data-bs-toggle="modal" 
+    data-bs-target="#exampleModal" data-bs-whatever="Eliminar">
+    <img src="../../../assets/IMG/CAMION.png" width="20px" height="20px"></button>
+  </span>
+  <span style="float: right;margin-right: 5px;margin-top: 3em;" [style.display]=botones>
+    <button style="background-color: yellow;"
+    button type="button" class="btn btn-primary Camion" data-bs-toggle="modal" 
+    data-bs-target="#exampleModal" data-bs-whatever="Editar">
+    <img src="../../../assets/IMG/LAPIZ2.png" width="10px" height="auto"></button>
+  </span>
+  <!--Fin Botones-->
+</li>
 </ul>
 </div>
-<app-editar-estudios></app-editar-estudios>
-  
+

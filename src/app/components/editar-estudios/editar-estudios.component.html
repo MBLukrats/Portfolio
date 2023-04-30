@@ -2,54 +2,57 @@
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New mensaje</h5>
+            <h5 class="modal-title" id="editarestudios">Editar Estudios</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">URL de la imagen</label>
-            <input type="text" class="form-control" id="recipient-name">
+        </div>
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">Titulo</label>
+            <input type="text" class="form-control" id="validationServer01" value="Mark">
           </div>
-          <div class="mb-3">
-            <label for="message-titulo" class="col-form-label">Titulo</label>
-            <input class="form-control" id="message-titulo">
+          <div class="col-md-4">
+            <label class="form-label">Inicio</label>
+            <input type="text" class="form-control" id="inicio" value="Otto">
           </div>
-          <div class="mb-3">
-            <label for="message-descripcion" class="col-form-label">Descripcion</label>
-            <input class="form-control" id="message-descripcion">
+          <div class="col-md-4">
+            <label class="form-label">Fin</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend3">@</span>
+              <input type="text" class="form-control" id="fin" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback">
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="message-inicio" class="data-bs-dismiss">inicio</label>
-            <input class="form-control" id="message-inicio">
+          <div class="col-md-6">
+            <label class="form-label">Descripcion</label>
+            <input type="text" class="form-control" id="descripcion" aria-describedby="validationServer03Feedback">
           </div>
-          <div class="mb-3">
-            <label for="message-fin" class="col-form-label">fin</label>
-            <input class="form-control" id="message-fin">
+          <div class="col-md-6">
+            <label class="form-label">URL</label>
+            <input type="text" class="form-control" id="url" aria-describedby="validationServer03Feedback">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Ancho</label>
+            <input type="text" class="form-control" id="ancho" aria-describedby="validationServer03Feedback">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Alto</label>
+            <input type="text" class="form-control" id="alto" aria-describedby="validationServer03Feedback">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">cambiaresteboton</button>
-      </div>
+    </div>
     </div>
   </div>
-</div>
+
 <script>
 var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
-  // Button that triggered the modal
   var button = event.relatedTarget
-  // Extract info from data-bs-* attributes
   var recipient = button.getAttribute('data-bs-whatever')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
   var modalTitle = exampleModal.querySelector('.modal-title')
   var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
   modalTitle.textContent = 'New message to ' + recipient
   modalBodyInput.value = recipient
 })

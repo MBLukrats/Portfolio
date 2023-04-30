@@ -582,6 +582,177 @@ margin: 1% 0.5%;
     }
 }
 
+/**Caballo**/
+.caballo {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateY(0) rotateX(90deg) rotateZ(0deg)
+    scaleX(30%) scaleY(30%) scaleZ(30%);
+    /* animation: rotar-peon 2s linear infinite;  */
+}
+.caballo div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.caballo div:nth-child(1){
+    transform: 
+    translateZ(0px);
+    background: linear-gradient(rgb(12, 12, 12), rgb(63, 29, 29));
+}
+/*Base*/
+.caballo div:nth-child(2){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(0px) translateY(175px)
+    rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(255, 254, 254);
+    border-top: 0px solid transparent;
+}
+.caballo div:nth-child(3){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(0px) translateY(25px)
+    rotateX(-120deg) rotateY(0deg) rotateZ(0deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(233, 227, 227);
+    border-top: 0px solid transparent;
+}
+.caballo div:nth-child(4){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(-74px) translateY(100px)
+    rotateX(0deg) rotateY(-59deg) rotateZ(90deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(236, 234, 234);
+    border-top: 0px solid transparent;
+}
+.caballo div:nth-child(5){
+    height: 100px;
+    width: 200px;
+    transform: 
+    translateZ(75px) translateX(74px) translateY(100px)
+    rotateX(0deg) rotateY(-121deg) rotateZ(90deg);
+    background-color: transparent;
+    border-right: 37.5px solid transparent;
+    border-left: 37.5px solid transparent;
+    border-bottom: 70px solid rgb(250, 250, 249);
+    border-top: 0px solid transparent;
+}
+/*Tronco*/
+.caballo div:nth-child(6){
+    background-color: rgb(236, 226, 226);
+    width: 65px;
+    height: 160px;
+    transform: 
+    translateZ(155px) translateX(47px) translateY(90px)
+    rotateZ(0deg) rotateX(104deg) rotateY(0deg)
+    skewX(10deg) skewY(-30deg);
+}
+.caballo div:nth-child(7){
+    background-color:transparent ;
+    width: 60px;
+    border-left: 21px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 120px solid rgb(235, 226, 226);
+    transform: 
+    translateZ(195px) translateX(100px) translateY(10px)
+    rotateZ(0) rotateX(104deg) rotateY(0deg);
+}
+/* .caballo div:nth-child(8){
+    background-color:transparent ;
+    width: 125px;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 150px solid rgb(255, 255, 255);
+    transform: 
+    translateZ(188px) translateX(75px) translateY(50px)
+    rotateZ(90deg) rotateX(76deg) rotateY(0deg);
+}
+.caballo div:nth-child(9){
+    background-color:transparent ;
+    width: 125px;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 150px solid rgb(248, 234, 234);
+    transform: 
+    translateZ(188px) translateX(0px) translateY(50px)
+    rotateZ(90deg) rotateX(104deg) rotateY(0deg);
+}  */
+.html {
+    display: none;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotar-peon 2s linear infinite;
+}
+.html div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.html div:nth-child(1){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(0deg)
+    translateX(-50px) translateY(-850px) translateZ(0px)
+    ;
+}
+.html div:nth-child(2){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(0deg)
+    translateX(-50px) translateY(-850px) translateZ(-300px)
+    ;
+}
+.html div:nth-child(3){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(90deg)
+    translateX(150px) translateY(-850px) translateZ(100px)
+    ;
+}
+.html div:nth-child(4){
+    width: 300px;
+    height: 500px;
+    background-image:url(../../../assets/IMG/HTML.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: 
+    rotateX(-90deg) rotateY(90deg)
+    translateX(150px) translateY(-850px) translateZ(-200px)
+    ;
+}
+
 
 
 

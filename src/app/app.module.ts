@@ -15,6 +15,9 @@ import { LoginComponent } from './components/login/login.component';
 import { EditarEstudiosComponent } from './components/editar-estudios/editar-estudios.component';
 import { EditarSkillsComponent } from './components/editar-skills/editar-skills.component';
 import { EditarExperienciaComponent } from './components/editar-experiencia/editar-experiencia.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { PortfolioEdicionComponent } from './components/portfolio-edicion/portfolio-edicion.component';
+
 
 
 @NgModule({
@@ -30,7 +33,9 @@ import { EditarExperienciaComponent } from './components/editar-experiencia/edit
     LoginComponent,
     EditarEstudiosComponent,
     EditarSkillsComponent,
-    EditarExperienciaComponent
+    EditarExperienciaComponent,
+    PortfolioComponent,
+    PortfolioEdicionComponent,
   ],
   imports: [
     BrowserModule,
